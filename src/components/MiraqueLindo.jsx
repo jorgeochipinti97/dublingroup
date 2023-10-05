@@ -5,12 +5,12 @@ import ButtonComponent from './ButtonComponent.astro'
 export const MiraqueLindo = () => {
   useEffect(() => {
     gsap.fromTo('.miraque', {
-      xPercent: -50,
+      xPercent: -1,
       opacity: 0.4
     }, {
       xPercent: 0, opacity: 1, ease: Power1.easeIn, duration: 1.5
     })
-    gsap.fromTo('#miraquebueno', { xPercent: 50, opacity: 0.5, }, { xPercent: 0, opacity: 1, ease: Power1.easeIn, duration: 1.5 })
+    gsap.fromTo('#miraquebueno', { xPercent: 1, opacity: 0.5, }, { xPercent: 0, opacity: 1, ease: Power1.easeIn, duration: 1.5 })
     gsap.fromTo('.buttonIphones', { opacity: 0 }, { opacity: 1, ease: Power1.easeIn, delay: 1.5, duration: .5 })
 
   }, [])
