@@ -28,7 +28,7 @@ export const VideoCallToaction = () => {
                         ¡Conseguilo antes que nadie!
                     </p>
                     <div className="flex justify-center items-center cursor-pointer">
-                        <a href="https://api.whatsapp.com/send/?phone=5491136740350&text&type=phone_number&app_absent=0">
+                        <a href="https://wa.link/p3xasg">
 
                             <button
                                 className="w-fit bg-lime-50 text-emerald-900  buttonOne cursor-pointer ripple mx-4 transition ease-in-out delay-150 hover:text-teal-900 mt-5 md:mt-0  text-xl md:text-2xl hover:border-green-900 duration-300 py-1 px-5 rounded-full"

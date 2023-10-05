@@ -34,7 +34,7 @@ export const MiraqueLindo = () => {
       </div>
 
 
-      <a href="https://api.whatsapp.com/send/?phone=5491136740350&text&type=phone_number&app_absent=0">
+      <a href="https://wa.link/p3xasg">
         <div className="w-full flex justify-center mt-20 buttonIphones flex-wrap " style={{ opacity: 0, }}  >
           <p className="text-2xl md:text-4xl md:text-end text-center">¡Conseguilo antes que nadie!</p>
           <div className="flex justify-center items-center cursor-pointer" >
