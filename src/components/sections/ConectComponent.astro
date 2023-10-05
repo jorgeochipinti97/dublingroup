@@ -1,0 +1,83 @@
+---
+import ButtonComponent from "../ButtonComponent.astro";
+---
+
+<div class="h-screen bg-black flex justify-center items-center snap-start">
+  <div class="h-5/6 w-5/6 flex flex-col justify-around">
+    <div style="opacity:0.2" class="titleOpacity">
+      <p class="text-white text-center text-5xl">
+        Conectate con el <span class="future">futuro</span>.
+      </p>
+    </div>
+    <div style="opacity:0.2" class="sectionOneOpacity">
+      <p class="text-white text-center text-3xl">
+        <span class="text-emerald-400">Descubrí</span>
+         la excelencia en
+        <span class="text-teal-100" style="font-weight:200 "
+          >tecnología y servicios
+        </span>que estabas buscando.
+      </p>
+    </div>
+    <div
+      class="flex justify-center w-ful sectionOneOpacity flex-wrap"
+      style="opacity:0.2"
+    >
+      <a
+        href="https://drive.google.com/drive/folders/1LvDIzlXh4Gif1l_azcSbcKCt8qoMl5iz"
+      >
+        <ButtonComponent
+          bgColor="bg-lime-50"
+          textColor="text-esmerald-700"
+          title="Productos"
+        />
+      </a>
+      <a
+        href="https://api.whatsapp.com/send/?phone=5491136740350&text&type=phone_number&app_absent=0"
+      >
+        <ButtonComponent
+          bgColor="bg-lime-50"
+          textColor="text-esmerald-700"
+          title="iPhone 15 & 15 PRO"
+        />
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  import gsap from "gsap";
+  import { Power1 } from "gsap";
+
+  gsap &&
+    gsap.to(".titleOpacity", { opacity: 1, ease: Power1.easeIn, delay: 2.6 });
+  gsap &&
+    gsap.to(".future", { color: "#34d399", ease: Power1.easeIn, delay: 2.8 });
+  gsap &&
+    gsap.to(".future", { color: "#34d399", ease: Power1.easeIn, delay: 2.5 });
+  gsap &&
+    gsap.to(".sectionOneOpacity", {
+      opacity: 1,
+      ease: Power1.easeIn,
+      delay: 2.7,
+    });
+</script>
+<style>
+  @keyframes changecolor {
+    from {
+      color: white;
+    }
+
+    to {
+      color: #34d399;
+    }
+  }
+  .futureOne {
+    view-timeline-name: --future;
+    animation-timeline: --future;
+    /* animation-range: entry 100% cover 100% ; */
+    animation-name: changecolor;
+    animation-fill-mode: both;
+    animation-duration: 750ms;
+  }
+</style>

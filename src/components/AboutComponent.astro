@@ -1,0 +1,166 @@
+---
+import CardComponent from "./CardComponent";
+---
+
+<section
+  class="w-full h-fit md:h-screen md:pt-10 pb-30 bg-black flex justify-center items-center flex-col"
+>
+  <div class="grid gap-6 items-center">
+    <div class="flex flex-col justify-center space-y-8 text-center">
+      <div class="space-y-2">
+        <h1
+          class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500"
+        >
+          Sobre la empresa
+        </h1>
+        <p
+          class="max-w-[900px] text-zinc-200 md:text-md dark:text-zinc-100 mx-auto"
+        >
+          Bienvenidos a<span class="text-emerald-400"> Dublin Group</span>,
+          donde la tecnología y la innovación se fusionan con la comodidad y la
+          confiabilidad. Nuestra misión es ofrecerte una experiencia única en
+          tecnología, desde la importación de productos de alta gama hasta el
+          armado de computadoras personalizadas.
+        </p>
+      </div>
+      <div class="w-full max-w-full space-y-4 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <CardComponent
+            title={"Somos expertons en gaming"}
+            body="Tenemos lo que buscás."
+            icon={"gaming"}
+          />
+          <CardComponent
+            title={"Amplio stock en línea Apple."}
+            body="Conseguí tu Iphone & Macbook y cambia tus accesorios."
+            icon={"apple"}
+          />
+          <CardComponent
+            title={"Armamos tu computadora personalizada"}
+            body="Conseguimos lo que necesites para tu presupuesto."
+            icon={"pc"}
+          />
+          <CardComponent
+            title={"Gestionamos tu importación"}
+            body="Traé lo que necesites del exterior y convertite en emprendedor con Dublin."
+            icon={"import"}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div
+  class="prefooter w-screen flex justify-center flex-col items-center"
+  style="height:30vh; "
+>
+  <div
+    class="footer flex flex-col justify-center items-center"
+    style="height:80% "
+  >
+    <div class="flex justify-center">
+      <div class="mx-2">
+        <a
+        href="https://api.whatsapp.com/send/?phone=5491136740350&text&type=phone_number&app_absent=0"
+
+        
+        >
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C8.23279 20.0029 6.49667 19.5352 4.97001 18.645L0.00401407 20L1.35601 15.032C0.465107 13.5049 -0.00293838 11.768 1.38802e-05 10C1.38802e-05 4.477 4.47701 0 10 0ZM6.59201 5.3L6.39201 5.308C6.26254 5.31589 6.13599 5.3499 6.02001 5.408C5.91153 5.46943 5.81251 5.54622 5.72601 5.636C5.60601 5.749 5.53801 5.847 5.46501 5.942C5.09514 6.4229 4.89599 7.01331 4.89901 7.62C4.90101 8.11 5.02901 8.587 5.22901 9.033C5.63801 9.935 6.31101 10.89 7.19901 11.775C7.41301 11.988 7.62301 12.202 7.84901 12.401C8.9524 13.3725 10.2673 14.073 11.689 14.447L12.257 14.534C12.442 14.544 12.627 14.53 12.813 14.521C13.1043 14.506 13.3886 14.4271 13.646 14.29C13.777 14.2225 13.9048 14.1491 14.029 14.07C14.029 14.07 14.072 14.042 14.154 13.98C14.289 13.88 14.372 13.809 14.484 13.692C14.567 13.606 14.639 13.505 14.694 13.39C14.772 13.227 14.85 12.916 14.882 12.657C14.906 12.459 14.899 12.351 14.896 12.284C14.892 12.177 14.803 12.066 14.706 12.019L14.124 11.758C14.124 11.758 13.254 11.379 12.722 11.137C12.6663 11.1127 12.6067 11.0988 12.546 11.096C12.4776 11.089 12.4085 11.0967 12.3433 11.1186C12.2781 11.1405 12.2183 11.1761 12.168 11.223C12.163 11.221 12.096 11.278 11.373 12.154C11.3315 12.2098 11.2744 12.2519 11.2088 12.2751C11.1433 12.2982 11.0723 12.3013 11.005 12.284C10.9399 12.2665 10.876 12.2445 10.814 12.218C10.69 12.166 10.647 12.146 10.562 12.11C9.98808 11.8595 9.4567 11.5211 8.98701 11.107C8.86101 10.997 8.74401 10.877 8.62401 10.761C8.2306 10.3842 7.88774 9.95801 7.60401 9.493L7.54501 9.398C7.50264 9.33416 7.46837 9.2653 7.44301 9.193C7.40501 9.046 7.50401 8.928 7.50401 8.928C7.50401 8.928 7.74701 8.662 7.86001 8.518C7.97001 8.378 8.06301 8.242 8.12301 8.145C8.24101 7.955 8.27801 7.76 8.21601 7.609C7.93601 6.925 7.64601 6.244 7.34801 5.568C7.28901 5.434 7.11401 5.338 6.95501 5.319C6.90101 5.313 6.84701 5.307 6.79301 5.303C6.65872 5.29633 6.52415 5.29766 6.39001 5.307L6.59101 5.299L6.59201 5.3Z"
+            fill="black"></path>
+        </svg>
+      </a>
+      </div>
+      <div class="mx-2">
+        <a 
+        href="https://www.instagram.com/dublingroupok/"        >
+        <svg
+        width="40"
+        height="40"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+        <path
+        d="M5.8 0H14.2C17.4 0 20 2.6 20 5.8V14.2C20 15.7383 19.3889 17.2135 18.3012 18.3012C17.2135 19.3889 15.7383 20 14.2 20H5.8C2.6 20 0 17.4 0 14.2V5.8C0 4.26174 0.61107 2.78649 1.69878 1.69878C2.78649 0.61107 4.26174 0 5.8 0ZM5.6 2C4.64522 2 3.72955 2.37928 3.05442 3.05442C2.37928 3.72955 2 4.64522 2 5.6V14.4C2 16.39 3.61 18 5.6 18H14.4C15.3548 18 16.2705 17.6207 16.9456 16.9456C17.6207 16.2705 18 15.3548 18 14.4V5.6C18 3.61 16.39 2 14.4 2H5.6ZM15.25 3.5C15.5815 3.5 15.8995 3.6317 16.1339 3.86612C16.3683 4.10054 16.5 4.41848 16.5 4.75C16.5 5.08152 16.3683 5.39946 16.1339 5.63388C15.8995 5.8683 15.5815 6 15.25 6C14.9185 6 14.6005 5.8683 14.3661 5.63388C14.1317 5.39946 14 5.08152 14 4.75C14 4.41848 14.1317 4.10054 14.3661 3.86612C14.6005 3.6317 14.9185 3.5 15.25 3.5ZM10 5C11.3261 5 12.5979 5.52678 13.5355 6.46447C14.4732 7.40215 15 8.67392 15 10C15 11.3261 14.4732 12.5979 13.5355 13.5355C12.5979 14.4732 11.3261 15 10 15C8.67392 15 7.40215 14.4732 6.46447 13.5355C5.52678 12.5979 5 11.3261 5 10C5 8.67392 5.52678 7.40215 6.46447 6.46447C7.40215 5.52678 8.67392 5 10 5ZM10 7C9.20435 7 8.44129 7.31607 7.87868 7.87868C7.31607 8.44129 7 9.20435 7 10C7 10.7956 7.31607 11.5587 7.87868 12.1213C8.44129 12.6839 9.20435 13 10 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 10 7Z"
+        fill="black"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="mx-2">
+        <a 
+        href="mailto:dublingroup.ac@gmail.com"
+        >
+        <svg
+        width="40"
+        height="40"
+        viewBox="0 0 20 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+        <path
+        d="M2 16C1.45 16 0.979002 15.804 0.587002 15.412C0.195002 15.02 -0.000664969 14.5493 1.69779e-06 14V2C1.69779e-06 1.45 0.196002 0.979002 0.588002 0.587002C0.980002 0.195002 1.45067 -0.000664969 2 1.69779e-06H18C18.55 1.69779e-06 19.021 0.196001 19.413 0.588001C19.805 0.980001 20.0007 1.45067 20 2V14C20 14.55 19.804 15.021 19.412 15.413C19.02 15.805 18.5493 16.0007 18 16H2ZM10 9L18 4V2L10 7L2 2V4L10 9Z"
+        fill="black"></path>
+      </svg>
+    </a>
+    </div>
+  </div>
+  
+  <div
+  class="hidden md:flex justify-around text-white items-center py-5 mt-10"
+      style={{
+        background: "linear-gradient(93deg, #5746E4 3.06%, #7844F4 106.58%)",
+        border: "2px solid #FFF",
+        borderRadius: "100px",
+        padding: 20,
+        width: "80%",
+      }}
+    >
+      <p>&copy; Todos los derechos reservados.</p>
+      <p class="font-poppins text-white px-2">
+        Dublin Group{" "}
+      </p>
+
+      <p class="font-poppins text-white px-2 cursor-pointer">
+        Políticas de privacidad
+      </p>
+
+      <p class="font-poppins text-white px-2 cursor-pointer">
+        Terminos y condiciones
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .prefooter {
+    background-color: #13482a;
+    /* background-image: linear-gradient(15deg, #ffe68a 0, #fae582 8.33%, #e9e47c 16.67%, #d7e276 25%, #c2e071 33.33%, #aadc6e 41.67%, #90d86c 50%, #72d46c 58.33%, #4dcf70 66.67%, #00cb77 75%, #00c87f 83.33%, #00c48a 91.67%, #00c196 100%); */
+  }
+  .footer {
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 9px;
+    background-image: radial-gradient(
+      circle at 50% -20.71%,
+      #ffff65 0,
+      #feff65 10%,
+      #e4fa67 20%,
+      #c8f169 30%,
+      #ace66b 40%,
+      #90d86c 50%,
+      #75ca6d 60%,
+      #5cbd6f 70%,
+      #44b271 80%,
+      #29a873 90%,
+      #00a177 100%
+    );
+  }
+</style>

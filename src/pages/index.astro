@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionTwo from "../components/sections/SectionTwo.astro";
+import ButtonComponent from "../components/ButtonComponent.astro";
+import VideoComponent from "../components/VideoComponent.jsx";
+import AboutComponent from "../components/AboutComponent.astro";
+import ConectComponent from "../components/sections/ConectComponent.astro";
+import { VideoCallToaction } from "../components/VideoCallToaction";
+
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <script>
+      import gsap from "gsap";
+      import { Power1 } from "gsap";
+      gsap && gsap.to(".incio", { opacity: 0, delay: 2 });
+      gsap && gsap.to(".incio", { display: 'none', delay: 2.5 });
+    </script>
+    <div
+      class="incio h-screen w-screen flex justify-start items-center flex-col snap-start"
+      style={{ backgroundColor: "#0f5026", position: "fixed", zIndex: 100 }}
+    >
+      <div class="md:w-5/5">
+        <img src="/logo.jpeg" alt="logo dublin" />
+      </div>
+      <div>
+        <p class="text-white text-center text-2xl md:text-4xl">Tu socio tecnológico en Argentina.</p>
+      </div>
+    </div>
+      <ConectComponent  />
+    </div>
+ <SectionTwo  />
+    <div class="h-screen bg-black snap-start">
+      <VideoComponent >
+<VideoCallToaction client:visible/>
+      </VideoComponent>
+    </div>
+    <div class="h-screen w-full snap-start">
+      <AboutComponent />
+    </div>
+  </main>
+</Layout>
