@@ -10,7 +10,7 @@ export const MiraqueLindo = () => {
     }, {
       xPercent: 0, opacity: 1, ease: Power1.easeIn, duration: 1.5
     })
-    gsap.fromTo('#miraquebueno', { xPercent: 50, opacity: 0.5 }, { xPercent: 0, opacity: 1, ease: Power1.easeIn, duration: 1.5 })
+    gsap.fromTo('#miraquebueno', { xPercent: 50, opacity: 0.5, }, { xPercent: 0, opacity: 1, ease: Power1.easeIn, duration: 1.5 })
     gsap.fromTo('.buttonIphones', { opacity: 0 }, { opacity: 1, ease: Power1.easeIn, delay: 1.5, duration: .5 })
 
   }, [])
@@ -52,8 +52,8 @@ export const MiraqueLindo = () => {
           <p className="md:text-6xl text-2xl text-center md:text-start  " >Mirá que <br className='sm:hidden' /> lindo</p>
         </div >
       </div >
-      <div className="w-full flex justify-center mt-10 " style={{ opacity: 0 }} id='miraquebueno'>
-        <div className=" flex items-center justify-center " >
+      <div className="w-full flex justify-center mt-10 " >
+        <div className=" flex items-center justify-center " style={{ opacity: 0,maxWidth:'100vw' }} id='miraquebueno' >
           <div className="flex w-full justify-center items-center">
             <p className="md:text-6xl text-2xl  text-center md:text-end">Mirá que bueno</p>
           </div>
